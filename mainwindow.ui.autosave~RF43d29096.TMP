@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>621</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+rgb(238, 238, 238)
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_0">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <widget class="QLabel" name="P0L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>科学计算器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <widget class="QLabel" name="P1L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>常规代数运算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputLabel1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输入</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OutputLabel1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输出</string>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="OutputWebWidget1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="InputLineEdit1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="InputWebWidget1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calc_1">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>280</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="P2L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>复数运算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="InputLineEdit2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="InputWebWidget2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputLabel2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输入</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OutputLabel2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输出</string>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="OutputWebWidget2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calc_2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>280</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="P3L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>向量运算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calc_3">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>280</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="P4L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>矩阵运算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="P5L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>统计计算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>571</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="SingleVarTab">
+       <attribute name="title">
+        <string>单变量</string>
+       </attribute>
+       <widget class="QTableWidget" name="P5data1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <row/>
+        <column/>
+       </widget>
+       <widget class="QPushButton" name="BtnAdd1">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BtnDelete1">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="calc_5_1">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>60</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="E_x">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>140</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="D_x">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>170</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>140</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E(x) :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>170</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D(x) :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>200</y>
+          <width>69</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sum(x) :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>230</y>
+          <width>81</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sum(x**2) :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Sum_x">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>200</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Sum_x_2">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>230</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>260</y>
+          <width>69</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>min(x) :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>290</y>
+          <width>69</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>max(x) :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Min_x">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>260</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Max_x">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>290</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="DoubleVarTab">
+       <attribute name="title">
+        <string>双变量</string>
+       </attribute>
+       <widget class="QTableWidget" name="P5data2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>271</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>2</number>
+        </property>
+        <row/>
+        <column/>
+        <column/>
+       </widget>
+       <widget class="QPushButton" name="BtnAdd2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BtnDelete2">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="regression">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>60</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>回归</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>130</y>
+          <width>69</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>y=k*x+b</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>160</y>
+          <width>21</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>k :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>190</y>
+          <width>21</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>b:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Stat_k">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>160</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Stat_b">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>190</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="P6L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>微积分计算</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputLabel6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输入</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="InputLineEdit6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="InputWebWidget6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="OutputWebWidget6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OutputLabel6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输出</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="CalculusWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>280</y>
+        <width>581</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <widget class="QGroupBox" name="groupBox6_mode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>471</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {border: 0;}</string>
+       </property>
+       <property name="title">
+        <string>模式</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QRadioButton" name="radioButton6_mode1">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>71</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>定积分</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton6_mode2">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>0</y>
+          <width>81</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>不定积分</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton6_mode3">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>0</y>
+          <width>91</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数值求导</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton6_mode4">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>0</y>
+          <width>91</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>符号求导</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="clear_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="calc_6">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>190</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>计算</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>291</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="P6labelx">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>21</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>x :</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_low">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>下限</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_high">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>上限</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_value">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>值</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="P7L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>方程/函数</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputLabel7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输入</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="InputLineEdit7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="InputWebWidget7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>539</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OutputLabel7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>69</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输出</string>
+      </property>
+     </widget>
+     <widget class="QWebEngineView" name="OutputWebWidget7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>370</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calc_7">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>370</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox6_mode_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {border: 0;}</string>
+      </property>
+      <property name="title">
+       <string>模式</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QRadioButton" name="radioButton7_mode1">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>方程</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton7_mode2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>0</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>函数</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="P6labelx7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>330</y>
+        <width>21</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_value_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>330</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>值</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QLabel" name="P8L1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>存储</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="storage">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>601</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>601</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="rowCount">
+       <number>20</number>
+      </property>
+      <property name="columnCount">
+       <number>2</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>50</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>200</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>35</number>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>161</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>145</width>
+       <height>1200</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>131</width>
+       <height>1200</height>
+      </size>
+     </property>
+     <widget class="QToolButton" name="BtnMainPage">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+	
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>主页面</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image0.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnNormCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>常规代数运算</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/image/image1.png</normaloff>
+        <normalon>:/image/image1.png</normalon>:/image/image1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnComplexCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>复数运算</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image2.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnVectorCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>390</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>向量运算</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image3.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnMatrixCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>矩阵运算</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image4.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnStatCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>650</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>统计计算</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image5.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnCalculusCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>780</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>微积分计算</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image6.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnFuncCalc">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>910</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>方程/函数</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/image/image7.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="BtnStorage">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1040</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{   
+	font: 11pt &quot;Microsoft YaHei UI&quot;;
+	border-top: 3px outset transparent;           /* 上边框宽度3像素、突出显示、颜色为透明 */
+	border-bottom: 7px outset transparent;
+	border-right: 3px outset transparent;
+	border-left: 3px outset transparent;
+    min-width: 80px;                            /* 控件最小宽度 */
+    min-height: 80px;
+	background-color: rgb(228, 228, 228);
+}
+
+/* 鼠标悬停 */
+QToolButton:hover{
+	background-color: rgb(205, 205, 205);
+}
+
+/* 点击和按下 */
+QToolButton:pressed,QToolButton:checked{
+	border-left: 3px outset rgb(93, 95, 97); 
+	background-color: rgb(246, 246, 246);	
+}
+
+QPushButton:default {
+    border-color: navy; 
+}</string>
+      </property>
+      <property name="text">
+       <string>存储</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/image/image8.png</normaloff>:/image/image8.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>886</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">qwebengineview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>clear_6</sender>
+   <signal>clicked()</signal>
+   <receiver>InputLineEdit6</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>151</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode2</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>384</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode4</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>381</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode3</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_low</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_high</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode3</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_low</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode3</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_high</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode3</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_value</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>458</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton6_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_value</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>381</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton7_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>P6labelx7</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>298</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>379</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton7_mode1</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_value_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton7_mode2</sender>
+   <signal>clicked()</signal>
+   <receiver>P6labelx7</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton7_mode2</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_value_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
